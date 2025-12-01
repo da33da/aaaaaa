@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Hello Page</title>
+<style>
+body {
+margin: 0;
+padding: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: url('ee.jpg') no-repeat center center;
+background-size: cover;
+}
+
+.center {
+text-align: center;
+}
+
+img {
+width: 200px;
+height: 200px;
+cursor: pointer;
+margin-bottom: 20px;
+animation: spin 8s linear infinite;
+}
+
+h1 {
+color: white;
+font-size: 36px;
+text-shadow: 2px 2px 4px black;
+}
+
+@keyframes spin {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+<div class="center">
+<img src="aaa.png" onclick="playSound()">
+<h1>Hello, World!</h1>
+</div>
+
+<script>
+function playSound() {
+new Audio('song.mp3').play();
+}
+</script>
+</body>
+</html>
